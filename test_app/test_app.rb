@@ -1,5 +1,7 @@
 require 'rubygems'
+
+gem 'sinatra', '=1.0'
 require 'sinatra'
 get '/' do
-  'Testing Farmer'
+  'Hello World'
 end
