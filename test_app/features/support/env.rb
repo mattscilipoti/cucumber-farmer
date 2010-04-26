@@ -8,8 +8,8 @@ require app_file
 Sinatra::Application.app_file = app_file
 
 gem 'rack-test', '>=0.5.0'
+require 'test/unit/assertions'
 require 'rack/test'
-
 require 'webrat'
 
 Webrat.configure do |config|
@@ -17,6 +17,7 @@ Webrat.configure do |config|
 end
 
 class TestAppWorld
+  include Test::Unit::Assertions  
   include Rack::Test::Methods
   include Webrat::Methods
   include Webrat::Matchers
