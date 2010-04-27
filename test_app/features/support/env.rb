@@ -28,4 +28,10 @@ class TestAppWorld
   end
 end
 
+#add farmer lib to load path (like gem command would do)
+farmer_lib_path = File.expand_path('../../../lib/', File.dirname(__FILE__))
+$LOAD_PATH.unshift farmer_lib_path
+
+require 'cucumber_step_definitions'
+
 World { TestAppWorld.new }
