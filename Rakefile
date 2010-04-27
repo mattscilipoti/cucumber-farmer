@@ -5,12 +5,16 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "farmer"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = 'A library of cucumber step definitions, which allow you to use a human to assert conditions during acceptance tests.'
+    gem.description = %Q{For instance... we needed to verify that certain portions of an image were 'blacked out'.
+    This is very difficult to assert using automation.  However, it is easy for a human.
+    Farmer allows us to include human confirmation into our normal testing flow.
+    }
     gem.email = "matt@scilipoti.name"
     gem.homepage = "http://github.com/mattscilipoti/farmer"
     gem.authors = ["Matt Scilipoti"]
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.add_development_dependency "cucumber", ">= 0.6"
+    gem.add_development_dependency "shoulda", ">= 2.10"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
