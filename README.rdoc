@@ -29,7 +29,9 @@ This will:
 * Once the user closes all the tabs, confirmation dialogs will be displayed.
 
 == Installation
-  gem install farmer
+  $ apt-get install dialog
+  $ gem install farmer
+
 In features/support/env.rb:
   require 'farmer_step_definitions'
 
