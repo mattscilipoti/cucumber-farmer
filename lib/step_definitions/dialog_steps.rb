@@ -45,7 +45,7 @@ end
 # Displays named warnings to humans.  
 # dialog: inform them that their input will be requested
 # firefox: specifies firefox requirements.
-Given /^these warnings are displayed:$/ do |table|
+Given /^(?:these warnings are|this warning is) displayed:$/ do |table|
   table.raw.flatten.inject(warnings = []) do |warning_messages, warning_name|
     msg = warning_for(warning_name)
     warning_messages << msg
