@@ -12,7 +12,7 @@ Farmer utilizes rdialog to allow you to:
 * Present messages
 * Display files
 * Ask a human for confirmation
-  
+
 == Example
     When I display the message "Please review the following images.  \nEnsure 'Frame' and 'Speed Data' items are hidden."
     And I display these Files:
@@ -31,8 +31,8 @@ This will:
 == Installation
   gem install farmer
 In features/support/env.rb:
-  require 'cucumber_step_definitions'
-  
+  require 'farmer_step_definitions'
+
 == Test
 Two levels of testing are required.  Library testing and 'usage as a gem' testing.
 ==== Usage as gem:
@@ -47,7 +47,7 @@ This library was extracted from an existing app.
 It was created test-first (mostly), but extracting the tests is harder than extracting code.
 Test are added regularly.
   rake
-  
+
 == Questions?
 * Check out step_definitions/dialog_steps.
 
@@ -58,11 +58,13 @@ Test are added regularly.
 * expand test coverage to unit tests
 * add step_definitions to rdoc.
 * utilize pickle foundation.
-  
+* make dialog timeout configurable.
+* namespace
+
 == Note on Patches/Pull Requests
 * Fork the project.
 * Please, do not mess with rakefile or version files.
-* Since you will probably want to utilize your own copy, while waiting for upstream to include your pull request, 
+* Since you will probably want to utilize your own copy, while waiting for upstream to include your pull request,
   I recommend creating a branch named 'upstream'.
 * Make your changes in a topic and merge them into 'master' and 'upstream'.
   This way, 'master' can have your readme, version, etc.

@@ -17,12 +17,12 @@ Webrat.configure do |config|
 end
 
 class TestAppWorld
-  include Test::Unit::Assertions  
+  include Test::Unit::Assertions
   include Rack::Test::Methods
   include Webrat::Methods
   include Webrat::Matchers
   # Webrat::Methods.delegate_to_session :response_code, :response_body
-  
+
   def app
     Sinatra::Application
   end
@@ -32,6 +32,6 @@ end
 farmer_lib_path = File.expand_path('../../../lib/', File.dirname(__FILE__))
 $LOAD_PATH.unshift farmer_lib_path
 
-require 'cucumber_step_definitions'
+require 'farmer_step_definitions'
 
 World { TestAppWorld.new }
