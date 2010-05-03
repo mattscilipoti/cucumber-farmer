@@ -20,7 +20,7 @@ When /^I display these Files:$/ do |table|
 end
 
 def dialog_timeout
-  5.seconds
+  5 #seconds
 end
 
 #  Then I should say "confirmation request goes here"'
@@ -42,7 +42,7 @@ end
 #  Given these warnings are displayed:
 #    |dialog |
 #    |firefox|
-# Displays named warnings to humans.  
+# Displays named warnings to humans.
 # dialog: inform them that their input will be requested
 # firefox: specifies firefox requirements.
 Given /^(?:these warnings are|this warning is) displayed:$/ do |table|
@@ -52,7 +52,7 @@ Given /^(?:these warnings are|this warning is) displayed:$/ do |table|
   end
 
   dialog = RDialog.new
-  dialog.timeout = 30.seconds
+  dialog.timeout = 30 #seconds
   dialog.msgbox(warnings.join('\n--------------------------\n'))
 end
 
