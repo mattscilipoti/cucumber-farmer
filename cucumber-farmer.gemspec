@@ -11,9 +11,9 @@ Gem::Specification.new do |s|
   s.authors = ["Matt Scilipoti"]
   s.date = %q{2010-08-26}
   s.description = %q{A library of cucumber step definitions, which allow you to use a human to assert conditions during acceptance tests.
-    For instance... we needed to verify that certain portions of an image were 'blacked out'.
-    This is very difficult to assert using automation.  However, it is easy for a human.
-    Farmer allows us to include human confirmation into our normal testing flow.
+      Some requirements are simple for a human to confirm, but are very difficult to assert using automation.
+      Farmer allows us to include human confirmation into our normal testing flow.
+      For example, we needed to verify that certain portions of an image were 'blacked out'.
     }
   s.email = %q{matt@scilipoti.name}
   s.extra_rdoc_files = [
