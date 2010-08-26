@@ -1,4 +1,4 @@
-source :ruby_gems
+source :rubygems
 
 gem 'bundler', '~> 1.0'
 
