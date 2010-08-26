@@ -1,20 +1,26 @@
+##BUNDLER
+.bundle/
+
+## EMACS
+*~
+\#*
+
 ## MAC OS
 .DS_Store
+
+## RUBYMINE
+.idea
+.\#*
+
+## RVM
+.rvmrc
 
 ## TEXTMATE
 *.tmproj
 tmtags
 
-## EMACS
-*~
-\#*
-.\#*
-
 ## VIM
 *.swp
-
-## RUBYMINE
-.idea
 
 ## PROJECT::GENERAL
 coverage
@@ -22,3 +28,7 @@ rdoc
 pkg
 
 ## PROJECT::SPECIFIC
+
+## DOCS
+doc/
+.yardoc/
