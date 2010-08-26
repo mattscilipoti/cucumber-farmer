@@ -4,7 +4,7 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "farmer"
+    gem.name = "cucumber-farmer"
     gem.summary = 'A library of cucumber step definitions, which allow you to use a human to assert conditions during acceptance tests.'
     gem.description = %Q{A library of cucumber step definitions, which allow you to use a human to assert conditions during acceptance tests.
     For instance... we needed to verify that certain portions of an image were 'blacked out'.

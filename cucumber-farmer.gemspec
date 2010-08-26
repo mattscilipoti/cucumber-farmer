@@ -4,12 +4,12 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{farmer}
+  s.name = %q{cucumber-farmer}
   s.version = "0.5.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Matt Scilipoti"]
-  s.date = %q{2010-05-03}
+  s.date = %q{2010-08-26}
   s.description = %q{A library of cucumber step definitions, which allow you to use a human to assert conditions during acceptance tests.
     For instance... we needed to verify that certain portions of an image were 'blacked out'.
     This is very difficult to assert using automation.  However, it is easy for a human.
@@ -23,14 +23,14 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
      ".gitignore",
+     "Gemfile",
      "LICENSE",
      "README.rdoc",
      "Rakefile",
      "VERSION",
      "farmer.gemspec",
      "lib/farmer.rb",
-     "lib/farmer_step_definitions.rb",
-     "lib/step_definitions/dialog_steps.rb",
+     "lib/farmer/step_definitions.rb",
      "test/helper.rb",
      "test_app/features/home_page.feature",
      "test_app/features/human_confirmation.feature",
@@ -41,7 +41,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/mattscilipoti/farmer}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.6}
+  s.rubygems_version = %q{1.3.7}
   s.summary = %q{A library of cucumber step definitions, which allow you to use a human to assert conditions during acceptance tests.}
   s.test_files = [
     "test/helper.rb"
@@ -51,7 +51,7 @@ Gem::Specification.new do |s|
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
-    if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<mattscilipoti-rdialog>, ["= 0.6.1"])
       s.add_development_dependency(%q<cucumber>, [">= 0.6"])
       s.add_development_dependency(%q<shoulda>, [">= 2.10"])
