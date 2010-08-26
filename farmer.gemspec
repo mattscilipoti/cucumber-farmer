@@ -5,12 +5,13 @@
 
 Gem::Specification.new do |s|
   s.name = %q{farmer}
-  s.version = "0.5.0"
+  s.version = "0.5.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Matt Scilipoti"]
   s.date = %q{2010-05-03}
-  s.description = %q{For instance... we needed to verify that certain portions of an image were 'blacked out'.
+  s.description = %q{A library of cucumber step definitions, which allow you to use a human to assert conditions during acceptance tests.
+    For instance... we needed to verify that certain portions of an image were 'blacked out'.
     This is very difficult to assert using automation.  However, it is easy for a human.
     Farmer allows us to include human confirmation into our normal testing flow.
     }
