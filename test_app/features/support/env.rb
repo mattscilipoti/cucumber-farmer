@@ -32,6 +32,8 @@ end
 farmer_lib_path = File.expand_path('../../../lib/', File.dirname(__FILE__))
 $LOAD_PATH.unshift farmer_lib_path
 
-require 'farmer_step_definitions'
+#>>>>>>>> Adding farmer steps here >>>>>>>>>>>>>>>>>
+require 'farmer/step_definitions'
+#<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 World { TestAppWorld.new }

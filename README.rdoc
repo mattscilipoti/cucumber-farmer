@@ -33,7 +33,7 @@ This will:
   $ gem install farmer
 
 In features/support/env.rb:
-  require 'farmer_step_definitions'
+  require 'farmer/step_definitions'
 
 == Test
 Two levels of testing are required.  Library testing and 'usage as a gem' testing.
