@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{cucumber-farmer}
-  s.version = "0.5.1"
+  s.version = "1.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Matt Scilipoti"]
@@ -28,7 +28,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
-     "farmer.gemspec",
+     "cucumber-farmer.gemspec",
      "lib/farmer.rb",
      "lib/farmer/step_definitions.rb",
      "test/helper.rb",

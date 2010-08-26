@@ -65,11 +65,11 @@ Test are added regularly.
 
 == Note on Patches/Pull Requests
 * Fork the project.
-* Please, do not mess with rakefile or version files.
 * Since you will probably want to utilize your own copy, while waiting for upstream to include your pull request,
   I recommend creating a branch named 'upstream'.
 * Make your changes in a topic and merge them into 'master' and 'upstream'.
   This way, 'master' can have your readme, version, etc.
+* Please, do not mess with rakefile or version files in the 'upstream' branch.
 * Add tests for it. This is important.  I don't want break it in a
   future version unintentionally.
 * Commit.
