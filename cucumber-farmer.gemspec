@@ -30,6 +30,7 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "cucumber-farmer-1.0.1.gem",
+     "cucumber-farmer-1.0.2.gem",
      "cucumber-farmer.gemspec",
      "lib/farmer.rb",
      "lib/farmer/step_definitions.rb",
