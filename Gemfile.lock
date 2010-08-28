@@ -1,3 +1,9 @@
+PATH
+  remote: .
+  specs:
+    cucumber-farmer (1.0.1)
+      mattscilipoti-rdialog (~> 0.6.1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -24,8 +30,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.0)
   cucumber (~> 0.6)
+  cucumber-farmer!
   mattscilipoti-rdialog (~> 0.6.1)
   shoulda (~> 2.10)
-  sinatra (= 1.0)
+  sinatra (~> 1.0)

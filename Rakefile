@@ -14,9 +14,11 @@ begin
     gem.email = "matt@scilipoti.name"
     gem.homepage = "http://github.com/mattscilipoti/farmer"
     gem.authors = ["Matt Scilipoti"]
-    gem.add_dependency('mattscilipoti-rdialog', '0.6.1')
-    gem.add_development_dependency "cucumber", ">= 0.6"
-    gem.add_development_dependency "shoulda", ">= 2.10"
+    gem.platform = Gem::Platform::RUBY
+    gem.add_dependency('mattscilipoti-rdialog', '~> 0.6.1')
+    gem.add_development_dependency "cucumber", "~> 0.6"
+    gem.add_development_dependency "shoulda", "~> 2.10"
+    gem.add_development_dependency 'sinatra', '~> 1.0'
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
