@@ -20,13 +20,18 @@ begin
     gem.authors = ["Matt Scilipoti"]
     gem.platform = Gem::Platform::RUBY
     gem.add_dependency('mattscilipoti-rdialog', '~> 0.6.1')
+
     gem.add_development_dependency "bundler", "~> 1.0.0"
     gem.add_development_dependency "ci_reporter", "~> 1.6.2"
+    gem.add_development_dependency "jeweler", "~> 1.4.0"
+    #testing
     gem.add_development_dependency "cucumber", "~> 0.6"
-    gem.add_development_dependency 'rack-test', '~> 0.5.0'
     gem.add_development_dependency "shoulda", "~> 2.10"
-    gem.add_development_dependency 'sinatra', '~> 1.0'
     gem.add_development_dependency 'webrat'
+    #test_app
+    gem.add_development_dependency 'rack-test', '~> 0.5.0'
+    gem.add_development_dependency 'sinatra', '~> 1.0'
+
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
