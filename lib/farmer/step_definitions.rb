@@ -36,7 +36,7 @@ Then /^I should say "([^\"]*)"$/ do |question|
   This dialog will timeout after #{dialog_timeout} secs.}
   response = dialog.yesno(question + '?')
 
-  response.should be_true
+  assert response
 end
 
 #  Given these warnings are displayed:
