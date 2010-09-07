@@ -28,6 +28,7 @@ rdoc
 pkg
 
 ## PROJECT::SPECIFIC
+test/reports/
 
 ## DOCS
 doc/
