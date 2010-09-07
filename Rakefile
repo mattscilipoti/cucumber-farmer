@@ -1,6 +1,10 @@
 require 'rubygems'
 require 'rake'
 
+#load all .rake files
+Dir[File.join(File.dirname(__FILE__), 'lib', '**/*.rake')].flatten.uniq.sort.each { |ext| load(ext) }
+
+
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
@@ -19,8 +23,10 @@ begin
     gem.add_development_dependency "bundler", "~> 1.0.0"
     gem.add_development_dependency "ci_reporter", "~> 1.6.2"
     gem.add_development_dependency "cucumber", "~> 0.6"
+    gem.add_development_dependency 'rack-test', '~> 0.5.0'
     gem.add_development_dependency "shoulda", "~> 2.10"
     gem.add_development_dependency 'sinatra', '~> 1.0'
+    gem.add_development_dependency 'webrat'
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
@@ -48,9 +54,13 @@ rescue LoadError
   end
 end
 
-task :test => :check_dependencies
+task :test => :check_dependencies do
+  puts '*****'
+  puts "INFO: remember to run cucumber tests in test_app/"
+  puts '*****'
+end
 
-task :default => :test
+task :default => [:test]
 
 require 'rake/rdoctask'
 Rake::RDocTask.new do |rdoc|

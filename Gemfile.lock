@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cucumber-farmer (1.0.2)
+    cucumber-farmer (1.0.3)
       mattscilipoti-rdialog (~> 0.6.1)
 
 GEM
@@ -21,12 +21,19 @@ GEM
       trollop (~> 1.16.2)
     json_pure (1.4.6)
     mattscilipoti-rdialog (0.6.1)
+    nokogiri (1.4.3.1)
     rack (1.2.1)
+    rack-test (0.5.4)
+      rack (>= 1.0)
     shoulda (2.11.3)
     sinatra (1.0)
       rack (>= 1.0)
     term-ansicolor (1.0.5)
     trollop (1.16.2)
+    webrat (0.7.1)
+      nokogiri (>= 1.2.0)
+      rack (>= 1.0)
+      rack-test (>= 0.5.3)
 
 PLATFORMS
   ruby
@@ -37,5 +44,7 @@ DEPENDENCIES
   cucumber (~> 0.6)
   cucumber-farmer!
   mattscilipoti-rdialog (~> 0.6.1)
+  rack-test (~> 0.5.0)
   shoulda (~> 2.10)
   sinatra (~> 1.0)
+  webrat
