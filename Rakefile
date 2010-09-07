@@ -16,6 +16,8 @@ begin
     gem.authors = ["Matt Scilipoti"]
     gem.platform = Gem::Platform::RUBY
     gem.add_dependency('mattscilipoti-rdialog', '~> 0.6.1')
+    gem.add_development_dependency "bundler", "~> 1.0.0"
+    gem.add_development_dependency "ci_reporter", "~> 1.6.2"
     gem.add_development_dependency "cucumber", "~> 0.6"
     gem.add_development_dependency "shoulda", "~> 2.10"
     gem.add_development_dependency 'sinatra', '~> 1.0'
@@ -59,3 +61,10 @@ Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
+
+#cireporter
+require 'rubygems'
+# Install:
+#  sudo gem install ci_reporter
+gem 'ci_reporter'
+require 'ci/reporter/rake/test_unit' # use this if you're using Test::Unit
