@@ -1,0 +1,10 @@
+<%
+std_format = ENV['CUCUMBER_FORMAT'] || 'progress'
+rerun = File.file?('rerun.txt') ? IO.read('rerun.txt') : ""
+rerun_opts = rerun.to_s.strip.empty? ? "--format #{std_format} features" : "--format #{ENV['CUCUMBER_FORMAT'] || 'pretty'} #{rerun}"
+std_opts = "--format #{std_format} --strict --tags ~@wip --tags ~@pending"
+%>
+default: --drb <%= std_opts %> features
+all: --drb
+wip: --drb --tags @wip:3 --wip features
+rerun: --drb <%= rerun_opts %> --format rerun --out rerun.txt --strict --tags ~@wip

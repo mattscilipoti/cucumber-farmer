@@ -3,3 +3,5 @@ require 'rake'
 
 #load all .rake files
 Dir[File.join(File.dirname(__FILE__), 'lib', '**/*.rake')].flatten.uniq.sort.each { |ext| load(ext) }
+
+task :default => :cucumber
