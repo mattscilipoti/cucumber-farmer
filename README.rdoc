@@ -62,6 +62,10 @@ Test are added regularly.
 * utilize pickle foundation.
 * make dialog timeout configurable.
 * namespace
+* cross platform support
+** http://github.com/danopia/luck/tree/master/lib/luck ?
+** http://github.com/rkumar/ncurses ?
+** http://github.com/gooch/RDialogy ?
 
 == Note on Patches/Pull Requests
 * Fork the project.
