@@ -1,19 +1,19 @@
-= farmer
+# farmer
 
 A library of cucumber step definitions, which allow you to use a human to assert conditions during acceptance tests.
 
-== Why?
+## Why?
 Some requirements are simple for a human to confirm, but are very difficult to assert using automation.
 Farmer allows us to include human confirmation into our normal testing flow.
 For example, we needed to verify that certain portions of an image were 'blacked out'.
 
-== What?
+## What?
 Farmer utilizes rdialog to allow you to:
 * Present messages
 * Display files
 * Ask a human for confirmation
 
-== Example
+## Example
     When I display the message "Please review the following images.  \nEnsure 'Frame' and 'Speed Data' items are hidden."
     And I display these Files:
       |filename|
@@ -28,35 +28,35 @@ This will:
 * Open a new page in firefox to display the named files (in tabs).
 * Once the user closes all the tabs, confirmation dialogs will be displayed.
 
-== Installation
+## Installation
   $ apt-get install dialog
   $ gem install farmer
 
 In features/support/env.rb:
   require 'farmer/step_definitions'
 
-== Test
+## Test
 Two levels of testing are required.  Library testing and 'usage as a gem' testing.
-==== Usage as gem:
+#### Usage as gem:
 A (sinatra) test app is included, containing some acceptance tests.
 Interestingly, these tests ask you to verify farmer's functionality.
 
   cd test_app
   cucumber
 
-==== Test the library:
+#### Test the library:
 This library was extracted from an existing app.
 It was created test-first (mostly), but extracting the tests is harder than extracting code.
 Test are added regularly.
   rake
 
-== Questions?
+## Questions?
 * Check out step_definitions/dialog_steps.
 
-== Issues?
+## Issues?
 * Create an issue on github (http://github.com/mattscilipoti/farmer/issues???)
 
-== TODO:
+## TODO:
 * expand test coverage to unit tests
 * add step_definitions to rdoc.
 * utilize pickle foundation.
@@ -67,7 +67,7 @@ Test are added regularly.
 ** http://github.com/rkumar/ncurses ?
 ** http://github.com/gooch/RDialogy ?
 
-== Note on Patches/Pull Requests
+## Note on Patches/Pull Requests
 * Fork the project.
 * Since you will probably want to utilize your own copy, while waiting for upstream to include your pull request,
   I recommend creating a branch named 'upstream'.
@@ -79,6 +79,8 @@ Test are added regularly.
 * Commit.
 * Send me a pull request from 'upstream' or the topic branch.
 
-== Copyright
+## Copyright
 
 Copyright (c) 2010 Matt Scilipoti. See LICENSE for details.
+
+<script type="text/javascript" src="http://www.ohloh.net/p/485563/widgets/project_thin_badge.js"></script>
