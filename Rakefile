@@ -16,7 +16,7 @@ begin
       For example, we needed to verify that certain portions of an image were 'blacked out'.
     }
     gem.email = "matt@scilipoti.name"
-    gem.homepage = "http://github.com/mattscilipoti/farmer"
+    gem.homepage = "http://github.com/mattscilipoti/cucumber-farmer"
     gem.authors = ["Matt Scilipoti"]
     gem.platform = Gem::Platform::RUBY
     gem.add_dependency('mattscilipoti-rdialog', '~> 0.6.1')
