@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Matt Scilipoti"]
-  s.date = %q{2010-09-07}
+  s.date = %q{2010-11-06}
   s.description = %q{A library of cucumber step definitions, which allow you to use a human to assert conditions during acceptance tests.
       Some requirements are simple for a human to confirm, but are very difficult to assert using automation.
       Farmer allows us to include human confirmation into our normal testing flow.
@@ -18,15 +18,16 @@ Gem::Specification.new do |s|
   s.email = %q{matt@scilipoti.name}
   s.extra_rdoc_files = [
     "LICENSE",
-     "README.rdoc"
+     "README.md"
   ]
   s.files = [
     ".document",
      ".gitignore",
      "Gemfile",
      "Gemfile.lock",
+     "History.txt",
      "LICENSE",
-     "README.rdoc",
+     "README.md",
      "Rakefile",
      "VERSION",
      "cucumber-farmer-1.0.1.gem",
@@ -34,6 +35,7 @@ Gem::Specification.new do |s|
      "cucumber-farmer.gemspec",
      "lib/farmer.rb",
      "lib/farmer/step_definitions.rb",
+     "lib/farmer/version.rb",
      "test/helper.rb",
      "test/test_dependencies.rb",
      "test_app/Rakefile",
@@ -45,7 +47,7 @@ Gem::Specification.new do |s|
      "test_app/lib/cucumber.rake",
      "test_app/test_app.rb"
   ]
-  s.homepage = %q{http://github.com/mattscilipoti/farmer}
+  s.homepage = %q{http://github.com/mattscilipoti/cucumber-farmer}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
