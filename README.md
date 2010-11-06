@@ -34,7 +34,11 @@ This will:
 
 Install dialog library:
     $ apt-get install dialog
-    $ brew install dialog  #you may need Formula from https://github.com/mattscilipoti/homebrew
+
+    $ brew install dialog  #homebrew pull request pending
+    # diloag Formula available at:
+    #   https://github.com/mattscilipoti/homebrew
+    #   and https://gist.github.com/665516
 
 Install the gem:
     $ gem install cucumber-farmer

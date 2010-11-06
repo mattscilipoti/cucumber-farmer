@@ -2,7 +2,7 @@ begin
   gem 'mattscilipoti-rdialog', '>=0.5.0'
   require 'mattscilipoti-rdialog'
 rescue LoadError
-  puts "REQUIRED: dialog & rdialog are required.\n  `sudo apt-get install dialog`\n  `gem install mattscilipoti-rdialog`"
+  puts "REQUIRED: dialog & rdialog are required.\n  `(brew || apt-get) install dialog`\n  `gem install mattscilipoti-rdialog`"
   exit
 end
 
