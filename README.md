@@ -1,6 +1,8 @@
-# farmer
+# cucumber-farmer
 
 A library of cucumber step definitions, which allow you to use a human to assert conditions during acceptance tests.
+
+Hosted at: http://github.com/mattscilipoti/cucumber-farmer
 
 ## Why?
 Some requirements are simple for a human to confirm, but are very difficult to assert using automation.
@@ -29,8 +31,13 @@ This will:
 * Once the user closes all the tabs, confirmation dialogs will be displayed.
 
 ## Installation
+
+Install dialog library:
   $ apt-get install dialog
-  $ gem install farmer
+  $ brew install dialog  #you may need Formula from https://github.com/mattscilipoti/homebrew
+
+Install the gem:
+  $ gem install cucumber-farmer
 
 In features/support/env.rb:
   require 'farmer/step_definitions'
@@ -52,9 +59,11 @@ Test are added regularly.
 
 ## Questions?
 * Check out step_definitions/dialog_steps.
+* If that doesn't help, see Issues.
 
 ## Issues?
-* Create an issue on github (http://github.com/mattscilipoti/farmer/issues???)
+* Create an issue on github (https://github.com/mattscilipoti/cucumber-farmer/issues)
+
 
 ## TODO:
 * expand test coverage to unit tests
