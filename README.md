@@ -33,14 +33,14 @@ This will:
 ## Installation
 
 Install dialog library:
-  $ apt-get install dialog
-  $ brew install dialog  #you may need Formula from https://github.com/mattscilipoti/homebrew
+    $ apt-get install dialog
+    $ brew install dialog  #you may need Formula from https://github.com/mattscilipoti/homebrew
 
 Install the gem:
-  $ gem install cucumber-farmer
+    $ gem install cucumber-farmer
 
 In features/support/env.rb:
-  require 'farmer/step_definitions'
+    require 'farmer/step_definitions'
 
 ## Test
 Two levels of testing are required.  Library testing and 'usage as a gem' testing.
@@ -48,8 +48,8 @@ Two levels of testing are required.  Library testing and 'usage as a gem' testin
 A (sinatra) test app is included, containing some acceptance tests.
 Interestingly, these tests ask you to verify farmer's functionality.
 
-  cd test_app
-  cucumber
+    cd test_app
+    cucumber
 
 #### Test the library:
 This library was extracted from an existing app.
