@@ -1,0 +1,11 @@
+1.0.3: 2010-11-06
+  Readme includes OSX installation instructions
+  Add Farmer.version
+
+1.0.2: 2010-08-28
+  Gemfile uses gemspec
+
+1.0.1: 2010-08-26
+  Using Bundler/Gemfile
+  Cleaned up dependencies
+  Using farmer/step_definitions (common convention)
