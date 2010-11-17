@@ -58,6 +58,9 @@ It was created test-first (mostly), but extracting the tests is harder than extr
 Test are added regularly.
   rake
 
+## Docs
+[github](http://github.com/mattscilipoti/cucumber-farmer) and [rdoc](http://rdoc.info/github/mattscilipoti/cucumber-farmer)
+
 ## Questions?
 * Check out step_definitions/dialog_steps.
 * If that doesn't help, see Issues.
